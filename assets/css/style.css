@@ -1,0 +1,60 @@
+@import "compass/css3";
+
+ul {
+  list-style:none;
+  font-family:'Trebuchet MS';
+  font-size:17px;
+  text-align:center;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  position:relative;
+  display:inline;
+}
+
+li a {
+  text-decoration:none;
+  color:#333;
+  display:inline-block;
+  padding:10px;
+}
+
+span {
+  display:block;
+  width:calc(100% - 23px);
+  height:4px;
+  background:#0088CC;
+  position:absolute;
+  left:10px;
+  bottom:-10px;
+}
+
+li a:hover {
+ 	color:#0088CC;
+}
+
+li a:hover ~ span {
+ 	 animation:ul 0.3s ease-out;
+   background:#333;
+}
+
+@keyframes ul {
+ 	0% { 
+    width:0;
+  }
+  100% { 
+    width:calc(100% - 23px);
+  }
+}
+#content{
+	width: 70%;
+	height: 50.5em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f0f0f0;
+	-webkit-filter: drop-shadow(0 0 2px #c5d5c5) drop-shadow(0 0 2px #c5d5c5) drop-shadow(0 0 2px #c5d5c5);
+
+}
