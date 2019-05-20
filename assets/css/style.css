@@ -1,109 +1,32 @@
 @import "compass/css3";
-
-ul {
-  list-style:none;
-  font-family:'Trebuchet MS';
-  font-size:17px;
-  text-align:center;
-  margin-top:20px;
-  margin-left: auto;
-  margin-right: auto;
+body{
+  background-color: #192a56;
 }
-
-li {
-  position:relative;
-  display:inline;
-}
-
-li a {
-  text-decoration:none;
-  color:#333;
-  display:inline-block;
-  padding:10px;
-}
-
-span {
-  display:block;
-  width:calc(100% - 23px);
-  height:4px;
-  background:#0088CC;
-  position:absolute;
-  left:10px;
-  bottom:-10px;
-}
-
-li a:hover {
- 	color:#0088CC;
-}
-
-li a:hover ~ span {
- 	 animation:ul 0.3s ease-out;
-   background:#333;
-}
-
-@keyframes ul {
- 	0% { 
-    width:0;
-  }
-  100% { 
-    width:calc(100% - 23px);
-  }
-}
-#content{
-	width: 70%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #f0f0f0;
-	-webkit-filter: drop-shadow(0 0 2px #c5d5c5) drop-shadow(0 0 2px #c5d5c5) drop-shadow(0 0 2px #c5d5c5);
-
-}
-.box{
-	width: 40%;
-	height: 250px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	word-wrap: initial;
-	background-color: #f0f0f0;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	-webkit-filter: drop-shadow(0 0 2px #c5d5c5) drop-shadow(0 0 2px #c5d5c5) drop-shadow(0 0 2px #c5d5c5);
-}
-#content > .box{
-	display: inline-block;
-	margin-top: 12em;
-}
-#boxes{
-	width: 100%;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
-}
-.box > .name{
-	border-bottom: 1px solid black;
-}
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
+.center{
   text-align: center;
 }
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
+.card{
+  background-color: #273c75;
+  transition: all 1s linear;
 }
-html {
-  height: 100%;
-  box-sizing: border-box;
+.card:hover{
+  transform: scale(1.005);
+  box-shadow: 0px 0px 15px #40739e;
+  transition: transform 1s linear,  box-shadow 0.5s linear;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.customCard{
+  width: 16rem; 
+  height: 16rem;
+  margin-bottom: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+.customCard > .card-body>.card-title{
+  font-size:2.2rem;
+}
+.title{
+  color: white;
+  font-size: 5rem;
 }
